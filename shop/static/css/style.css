@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    background-color: #bfddf2;
+}
+.shop-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.shop-card {
+    border:1px solid #a7c6db;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+}
