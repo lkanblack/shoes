@@ -11,7 +11,8 @@
 .shop-card {
     border:1px solid #a7c6db;
     width: 300px;
-    height: 350px;
+    min-height: 350px;
+    max-height: auto;
     margin: 20px;
     padding: 20px;
     border-radius: 4px;

@@ -9,7 +9,7 @@ class Post(models.Model):
     description = models.TextField()
     # created_date = models.DateTimeField(default=timezone.now)
     # published_date = models.DateTimeField(blank=True, null=True)
-    image = models.ImageField(blank=True, upload_to='img/%Y/%m/%d', help_text='150x150px', verbose_name='Ссылка картинки')
+    image = models.ImageField(blank=True, upload_to='img/', help_text='150x150px', verbose_name='Ссылка картинки')
     quantity = models.DecimalField(max_digits = 5, decimal_places = 0) 
     price = models.DecimalField(max_digits=6, decimal_places=2)
 
