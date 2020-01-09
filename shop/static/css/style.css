@@ -41,7 +41,17 @@ body {
     background: #fff;
     padding: 10px;
 }
-
+.shop-title {
+    text-align: center;
+}
+.shop-hero {
+    margin: 20px 0px;
+    height: 350px;
+    width: 100%;
+    background: url(https://www.43einhalb.com/files/image/id/201714/w/1000/h/600/n/nike-n110-d-ms-x-signal-fk-blue-hero-at5405-001-mood-1.jpg) center no-repeat;
+    background-size: cover;
+    
+}
 .shop-body {
     display: flex;
     flex-wrap: wrap;
