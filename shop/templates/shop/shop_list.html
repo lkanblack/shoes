@@ -7,16 +7,37 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
     </head>
     
 
     <body>
-        <div class="header">
-            <h1><a href="/">Nike Shoes</a></h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <a href="#"><img src="/img/logo.png" alt=""></a>
+                        <ul>
+                            <a href="#"><li>Shoes</li></a>
+                            <a href="#"><li>Hoodies</li></a>
+                            <a href="#"><li>News</li></a>
+                            <a href="#"><li>Contact</li></a>
+                        </ul>
+                        <div class="header-buttons">
+                            <button>Sign In</button>
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="shop-body">
-            {% for post in posts %}
+        <div class="container">
+            <div class="row">
+                <div class="shop-body">
+                {% for post in posts %}
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        
                 <div class="shop-card">
                     <h3><a href="">{{ post.title }}</a></h3>
                     {% if post.image %}
@@ -27,7 +48,10 @@
                     <span><strong>{{ post.price }}</strong> EUR</span>
                     <button type="submit">Add to cart</button>
                 </div>
-            {% endfor %}
+                    </div>
+                {% endfor %}
+        </div>
+            </div>
         </div>
     </body>
 </html> 
