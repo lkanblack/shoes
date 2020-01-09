@@ -16,4 +16,31 @@
     margin: 20px;
     padding: 20px;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    color:#414542;
+    position: relative;
+}
+.shop-card img {
+    width: 150px;
+    height: 150px;
+}
+.shop-card a {
+    color:#414542;
+}
+.shop-card a:hover {
+    text-decoration: none;
+}
+.shop-card button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    border:none;
+    background-color: #a3ffba;
+    padding: 10px;
+    border-radius: 4px;
+}
+.shop-card button:hover {
+    background-color: #70ff94;
 }
